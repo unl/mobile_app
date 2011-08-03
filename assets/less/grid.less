@@ -1,0 +1,38 @@
+/* Initial grid is for ~320px viewport */
+
+/* Define your column fixed column and gutter width for 320px wide (we'll scale up and down based on this). */
+
+@columnWidth: 87px;
+@gutter: 14px;
+@numberColumns : 3;
+
+/* LESS function to combine column and gutter widths */
+.theWidth (@theColumn: 1) {
+  width: (@columnWidth * @theColumn) + (@gutter * (@theColumn - 1));
+}
+
+.container {
+    width: 100%;
+    max-width: (@columnWidth * @numberColumns) + (@gutter * (@numberColumns + 2));
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#grid {
+    .grid1, .grid2, .grid3 {
+        margin-left: @gutter;
+        float: left;
+        min-height: 1px;
+    }
+    
+    .grid1 { .theWidth(1); }
+    .grid2 { .theWidth(2); }
+    .grid3 { .theWidth(3); }
+    
+    .first {
+        clear: left;
+        margin-left: 0;
+    }
+}
+

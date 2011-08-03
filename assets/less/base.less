@@ -1,0 +1,122 @@
+/* 
+*
+* Define our constants 
+*
+*/
+@standardFont: Helvetica, Arial, sans-serif;
+
+@primaryColor : #b70302;
+@negativeColor: #F1F1F1;
+@secondaryColor: #DFDFCB;
+
+/* 
+*
+* Import all the needed CSS Rules 
+*
+*/
+@import 'reset.css';
+
+/* Bring in the media-query grid rules */
+@import 'grid.less';
+
+/* Bring in the heading definitions */
+@import 'headings.less';
+
+/* Bring in vendor-specific rules */
+@import 'css3.less';
+
+/* OK, enough already, let's start building the structure of the app! */
+html {
+    -webkit-text-size-adjust: none;
+    
+    body {
+        font: 1em/1.625em @standardFont; /* Set easy to read text, http://www.informationarchitects.jp/en/100e2r/ */
+        color: #333;
+        background: #FFF url('../img/320/campus01.jpg') no-repeat;
+        
+        header {
+            background: @primaryColor;
+            min-height: 20px;
+            border-width: 1px 0;
+            border-color: #cf5655;
+            .box-shadow(0, 3px, 3px, rgba(0,0,0,0.42));
+        }
+        
+        #appNav {
+            position: absolute;
+            bottom: 0;
+        
+            ul {
+            
+                li {
+                    display: inline-block;
+                    #grid > .grid1;
+                    margin-bottom: 14px;
+                    
+                    a {
+                        background-color: @negativeColor;
+                        display: block;
+                        .box-shadow(0, 0, 3px, rgba(0,0,0,0.42));
+                        .border-radius(5px);
+                        height: 77px;
+                        font-size: 0.625em;
+                        text-decoration: none;
+                        line-height: 1.2em;
+                        padding: 5px;
+                        color: #333;
+                        position: relative;
+                        
+                        span {
+                            position: absolute;
+                            bottom: 5px;
+                            
+                            em {
+                                text-transform: uppercase;
+                                letter-spacing: -0.06em;
+                                font-size: 1.25em;
+                                display: block;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* #appNav button supporting images */
+
+#appNav {
+    a {
+        background-position: 52px 8px;
+        background-repeat: no-repeat;
+    }
+    .directory a {
+        background-image: url('../img/320/iconDirectory.png');
+    }
+    .maps a {
+        background-image: url('../img/320/iconMaps.png');
+    }
+    .events a {
+        background-image: url('../img/320/iconEvents.png');
+    }
+    .news a {
+        background-image: url('../img/320/iconNews.png');
+    }
+    .planetRed a {
+        background-image: url('../img/320/iconPlanetRed.png');
+    }
+    .library a {
+        background-image: url('../img/320/iconLibrary.png');
+    }
+    .media a {
+        background-image: url('../img/320/iconMedia.png');
+    }
+    .huskers a {
+        background-image: url('../img/320/iconHuskers.png');
+    }
+}
+
+/* Bring in our media query overrides */
+@import 'media_queries.less';

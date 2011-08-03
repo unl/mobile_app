@@ -1,0 +1,24 @@
+@import 'reset.css';
+.container{width:100%;max-width:331px;margin:0 auto;overflow:hidden;}
+#grid .grid1,#grid .grid2,#grid .grid3{margin-left:14px;float:left;min-height:1px;}
+#grid .grid1{width:87px;}
+#grid .grid2{width:188px;}
+#grid .grid3{width:289px;}
+#grid .first{clear:left;margin-left:0;}
+h1,h2,h3,h4,h5,h6{font-family:Palatino,'Palatino Linotype','Book Antiqua',FreeSerif,Georgia,serif;font-size:1em;font-weight:bold;}
+h1{font-size:4.25em;line-height:1.1471em;margin:0 0 0.3824em;}
+h2{font-size:2.625em;line-height:1.2381em;margin:0 0 0.619em;}
+h3{font-size:1.625em;line-height:1em;margin:0 0 1em;}
+small{font-size:0.625em;margin:0 0 2.6em;}
+html{-webkit-text-size-adjust:none;}html body{font:1em/1.625em Helvetica,Arial,sans-serif;color:#333;background:#ffffff url('../img/320/campus01.jpg') no-repeat;}html body header{background:#b70302;min-height:20px;border-width:1px 0;border-color:#cf5655;box-shadow:0 3px 3px rgba(0, 0, 0, 0.42);-webkit-box-shadow:0 3px 3px rgba(0, 0, 0, 0.42);-moz-box-shadow:0 3px 3px rgba(0, 0, 0, 0.42);}
+html body #appNav{position:absolute;bottom:0;}html body #appNav ul li{display:inline-block;margin-left:14px;float:left;min-height:1px;width:87px;margin-bottom:14px;}html body #appNav ul li a{background-color:#f1f1f1;display:block;box-shadow:0 0 3px rgba(0, 0, 0, 0.42);-webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.42);-moz-box-shadow:0 0 3px rgba(0, 0, 0, 0.42);border-radius:5px;height:77px;font-size:0.625em;text-decoration:none;line-height:1.2em;padding:5px;color:#333;position:relative;}html body #appNav ul li a span{position:absolute;bottom:5px;}html body #appNav ul li a span em{text-transform:uppercase;letter-spacing:-0.06em;font-size:1.25em;display:block;font-weight:bold;}
+#appNav a{background-position:52px 8px;background-repeat:no-repeat;}
+#appNav .directory a{background-image:url('../img/320/iconDirectory.png');}
+#appNav .maps a{background-image:url('../img/320/iconMaps.png');}
+#appNav .events a{background-image:url('../img/320/iconEvents.png');}
+#appNav .news a{background-image:url('../img/320/iconNews.png');}
+#appNav .planetRed a{background-image:url('../img/320/iconPlanetRed.png');}
+#appNav .library a{background-image:url('../img/320/iconLibrary.png');}
+#appNav .media a{background-image:url('../img/320/iconMedia.png');}
+#appNav .huskers a{background-image:url('../img/320/iconHuskers.png');}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){}@media only screen and (min-width : 321px){}@media only screenand (max-width : 320px){}@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){}@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){}@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){}@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5){}

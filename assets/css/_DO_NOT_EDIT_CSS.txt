@@ -1,0 +1,10 @@
+
+ _____ __  __ _____   ____  _____ _______       _   _ _______ 
+|_   _|  \/  |  __ \ / __ \|  __ \__   __|/\   | \ | |__   __|
+  | | | \  / | |__) | |  | | |__) | | |  /  \  |  \| |  | |   
+  | | | |\/| |  ___/| |  | |  _  /  | | / /\ \ | . ` |  | |   
+ _| |_| |  | | |    | |__| | | \ \  | |/ ____ \| |\  |  | |   
+|_____|_|  |_|_|     \____/|_|  \_\ |_/_/    \_\_| \_|  |_|   
+                                                            
+
+All the CSS is controlled with LESS CSS (http://lesscss.org/). Please do not directly edit the CSS files, as your changes will be lost when the LESS files are compiled. Instead, make your updates to the appropriate LESS file and compile into new CSS files.

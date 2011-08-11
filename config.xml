@@ -4,10 +4,10 @@
 	id		= "com.phonegap.getting.started"
 	version 	= "1.0.0">
 
-	<name>UNL: Mobile</name>
+	<name>Nebraska</name>
 
 	<description>
-		The official University of Nebraska-Lincoln Mobile Application
+		The official University of Nebraska-Lincoln mobile application
 	</description>
 
 	<author href="http://wdn.unl.edu"

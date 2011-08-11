@@ -1,41 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
 		<title>UNL Mobile</title>
+		<script src="assets/js/vendor/jquery-1.6.2.min.js" type="text/javascript"></script>
+		<script src="assets/js/vendor/jquery.mobile-1.0b2.min.js" type="text/javascript"></script>
+		<script src="assets/js/media.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="assets/css/vendor/jquery.mobile-1.0b2.min.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="assets/css/base.css" type="text/css" media="screen" />
 	</head>
 	<body>
- 		<header>
- 		    
- 		</header>
- 		<nav id="appNav">
- 		    <ul>
- 		        <li class="directory">
- 		            <a href=""><span>Contact us <em>Directory</em></span></a>
- 		        </li>
- 		        <li class="maps">
- 		            <a href=""><span>Find your way <em>Maps</em></span></a>
- 		        </li>
- 		        <li class="events">
- 		            <a href=""><span>Join us <em>Events</em></span></a>
- 		        </li>
- 		        <li class="news">
- 		            <a href=""><span>Get updated <em>News</em></span></a>
- 		        </li>
- 		        <li class="planetRed">
- 		            <a href=""><span>Connect <em>Planet Red</em></span></a>
- 		        </li>
- 		        <li class="library">
- 		            <a href=""><span>Do research <em>Library</em></span></a>
- 		        </li>
- 		        <li class="media">
- 		            <a href=""><span>Be entertained <em>Media</em></span></a>
- 		        </li>
- 		        <li class="huskers">
- 		            <a href=""><span>Cheer on the <em>Huskers</em></span></a>
- 		        </li>
- 		    </ul>
- 		</nav>
+	    <div data-role="page">
+     		<nav id="appNav">
+     		    <ul>
+     		        <li class="directory">
+     		            <a href="#directory">Directory</a>
+     		        </li>
+     		        <li class="maps">
+     		            <a href="">Maps</a>
+     		        </li>
+     		        <li class="events">
+     		            <a href="">Events
+     		        </li>
+     		        <li class="news">
+     		            <a href="">News</a>
+     		        </li>
+     		        <li class="planetRed">
+     		            <a href="http://planetred.unl.edu/">Planet Red</a>
+     		        </li>
+     		        <li class="library">
+     		            <a href="http://www.unl.edu/libr/m/">Library</a>
+     		        </li>
+     		        <li class="media">
+     		            <a href="assets/html/media/channels.html">Media</a>
+     		        </li>
+     		        <li class="huskers">
+     		            <a href="">Huskers
+     		        <li class="support">
+     		            <a href="#support">Support</a>
+     		        </li>
+     		    </ul>
+     		</nav>
+ 		</div>
+ 		<!-- Start of the Directory Page -->
+ 		<div id="directory" data-role="page">
+ 		    <form>
+ 		        <input type="search" name="q" action="http://directory.unl.edu/service.php" method="get" />
+ 		    </form>
+ 		</div>
+ 		<!-- End the the Directory Page -->
+ 		
+ 		<!-- Start of the Support Page -->
+ 		<div id="support" data-role="page">
+ 		    This is our support page. Provide Help Desk numbers, etc...
+ 		</div>
+ 		<!-- End the the Support Page -->
 	</body>
 </html>
